@@ -4,9 +4,13 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  server: {
-    port: 5173,
-    // Forward API calls to the Express server so no CORS setup is needed in development.
-    proxy: { '/api': 'http://localhost:5000' },
-  },
+  // server: {
+  //   port: 5173,
+  //   // Forward API calls to the Express server so no CORS setup is needed in development.
+  //   proxy: { '/api': 'http://localhost:5000' },
+  // },
+   envPrefix: ['VITE_', 'API_URL'], 
 });
+
+
+// export default defineConfig({ plugins: [react()], envPrefix: ['VITE_', 'API_URL'], });

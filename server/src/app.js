@@ -8,7 +8,7 @@ import authRoutes from './routes/auth.routes.js';
 import interviewRoutes from './routes/interview.routes.js';
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://voice-interview-ai-oo5y.vercel.app',
+  'https://voice-interview-ai-swart.vercel.app',
 ];
 const app = express();
 
